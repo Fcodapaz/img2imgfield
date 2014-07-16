@@ -1,0 +1,6 @@
+# config/application.yml
+development:
+  table_prefix:
+
+production:
+  table_prefix: drupal_
