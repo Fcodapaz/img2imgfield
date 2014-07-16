@@ -10,7 +10,7 @@ namespace :image do
     j=0
     begin
       ImageAttach.find_each do |i|
-        if Node.exists?(i.nid)
+        if Node.exists?(i.nid) && !i.image.nil?
           node = Node.find(i.nid)
           img = ImageField.new
           img.vid = node.vid
