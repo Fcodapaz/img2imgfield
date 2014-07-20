@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
+  host: 10.128.194.171
   database: proparnaiba
-  username: root
+  username: proparnaiba
   password: <%= ENV['IMG2IMGFIELD_DATABASE_PASSWORD'] %>
